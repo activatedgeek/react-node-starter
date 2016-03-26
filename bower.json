@@ -1,0 +1,17 @@
+{
+  "name": "storyxpress-analytics",
+  "version": "0.1.0",
+  "main": "app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "localforage": "^1.4.0",
+    "roboto-fontface": "^0.4.5",
+    "flexboxgrid": "^6.3.0"
+  }
+}

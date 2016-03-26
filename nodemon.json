@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "ignore": ["tests/"],
+  "watch": ["bin/", "config/", "routes/", "utils/", ".env", "app.js"]
+}

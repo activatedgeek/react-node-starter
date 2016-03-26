@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    block head-meta
+      //- include includes/meta
+      - for (var name in metaData)
+        meta(property=name,content=metaData[name])
+
+    title #{title}
+
+    block head-content
+      link(rel="icon",href="data:;base64,iVBORw0KGgo=")
+
+    block head-css
+      //- include includes/css
+      - for (var src in css)
+        link(href=css[src],rel='stylesheet',type='text/css')
+
+    block head-js
+      //- include includes/js
+      - for (var src in js)
+          script(src=js[src],defer)
+
+  body
+    block page-header
+
+    block page-content
+      div#main
