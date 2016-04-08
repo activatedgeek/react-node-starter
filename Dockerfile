@@ -18,6 +18,6 @@ ENV NODE_ENV=production \
   APP_KEY=randomappkey \
 
   REDIS_HOST=127.0.0.1 \
-  REDIS_PORT=6379 \
+  REDIS_PORT=6379
 
 CMD ["npm", "-s", "start"]
