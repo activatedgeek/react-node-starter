@@ -1,0 +1,6 @@
+.git/
+*.log
+.DS_Store
+.env
+bower_components/
+src/
