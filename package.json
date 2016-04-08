@@ -2,9 +2,11 @@
   "name": "react-node-starter",
   "version": "0.1.0",
   "scripts": {
+    "bower": "bower install",
     "build": "CMD=webpack;[ \"$NODE_ENV\" = production ] && CMD=\"$CMD -p\";eval $CMD;",
-    "postinstall": "npm prune; bower install; npm run -s build",
+    "postinstall": "npm prune",
     "start": "node ./bin/www;",
+    "test": "NODE_ENV=testing mocha --recursive tests/",
     "watch:build": "webpack --verbose --progress --watch",
     "watch:start": "nodemon ./bin/www"
   },
