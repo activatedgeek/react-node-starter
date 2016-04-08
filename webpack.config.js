@@ -20,7 +20,6 @@ const WebpackConfig = {
 
   module: {
 
-    // @TODO!! check eslint for all the new code
     preLoaders: [
       {
         test: /\.js(x)?$/,

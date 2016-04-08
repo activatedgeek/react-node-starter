@@ -1,0 +1,17 @@
+# environment configuration file
+.env
+
+# transpiled JS files
+public/dist/*
+
+# node packages
+node_modules/
+
+# bower packages
+bower_components/
+
+# Generic
+*.log
+.DS_Store
+
+!example.env

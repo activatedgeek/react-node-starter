@@ -6,4 +6,4 @@ For personal usage only away from generic bloated starter kits.
 
 ## Suggestions?
 
-Please open an issue appropriately.
+Please open an issue.

@@ -1,7 +1,6 @@
 {
-  "name": "storyxpress-analytics",
+  "name": "react-node-starter",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "build": "CMD=webpack;[ \"$NODE_ENV\" = production ] && CMD=\"$CMD -p\";eval $CMD;",
     "postinstall": "npm prune; bower install; npm run -s build",
@@ -21,10 +20,10 @@
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "material-ui": "^0.14.4",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
     "react-tap-event-plugin": "^0.2.2",
-    "redis": "^2.5.2",
+    "redis": "^2.6.0-1",
     "superagent": "^1.8.1"
   },
   "devDependencies": {
@@ -44,5 +43,9 @@
     "nodemon": "^1.9.1",
     "supertest": "^1.2.0",
     "webpack": "^1.12.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:activatedgeek/react-node-starter.git"
   }
 }
