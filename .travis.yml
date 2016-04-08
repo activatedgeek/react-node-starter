@@ -13,4 +13,4 @@ script:
 
 after_success:
   - npm run -s build
-  - docker build -t storyxpress/react-node-starter:latest .
+  - docker build -t activatedgeek/react-node-starter:latest .
