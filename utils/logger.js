@@ -1,12 +1,13 @@
 "use strict";
 
 const bunyan = require('bunyan');
+const config = require('../config/app');
 
 const logger = bunyan.createLogger({
-  name: 'webapp',
+  name: 'react-node-starter',
   streams: [
     {
-      level: 'debug',
+      level: config.env === 'production' ? 'info' : 'debug',
       stream: process.stdout
     },
   ],

@@ -1,6 +1,5 @@
 'use strict';
 
-const dotenv = require('dotenv');
 const express = require('express');
 const session = require('express-session');
 const redis = require('redis');
@@ -13,10 +12,6 @@ const bunyanMiddleware = require('bunyan-middleware');
 
 const logger = require('./utils/logger');
 const log = logger.child({type: `module:${path.basename(__filename)}`});
-
-if (process.env.NODE_ENV !== 'testing') {
-  dotenv.load({silent: true});
-}
 
 const config = require('./config/app');
 
