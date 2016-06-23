@@ -6,11 +6,12 @@ services:
   - docker
 
 before_script:
-  - npm -s i
+  - npm i
 
 script:
-  - npm -s test
+  - npm test
 
 after_success:
-  - npm run -s build
+  - npm run build --production
+  - npm prune --production
   - docker build -t activatedgeek/react-node-starter:latest .
