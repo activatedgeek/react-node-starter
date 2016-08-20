@@ -14,4 +14,5 @@ script:
 after_success:
   - npm run build --production
   - npm prune --production
-  - docker build -t activatedgeek/react-node-starter:latest .
+  - docker build -t activatedgeek/react-starter:latest .
+  - docker images

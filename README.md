@@ -1,6 +1,6 @@
 # React Node Starter
 
-[![Build Status](https://travis-ci.org/activatedgeek/react-node-starter.svg?branch=master)](https://travis-ci.org/activatedgeek/react-node-starter) [![Dependency Status](https://david-dm.org/activatedgeek/react-node-starter.svg)](https://david-dm.org/activatedgeek/react-node-starter)
+[![Build Status](https://travis-ci.org/activatedgeek/react-starter.svg?branch=master)](https://travis-ci.org/activatedgeek/react-starter) [![Dependency Status](https://david-dm.org/activatedgeek/react-starter.svg)](https://david-dm.org/activatedgeek/react-starter)
 
 A basic React Node Starter for quick bootstrapping.
 

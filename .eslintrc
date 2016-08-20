@@ -4,11 +4,15 @@
     "browser": true,
     "node": true
   },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
   "rules": {
     "arrow-body-style": [0],
     "comma-dangle": [0],
-    "guard-for-in": [1],
-    "import/imports-first": [1],
+    "import/imports-first": [0],
     "jsx-a11y/img-has-alt": [1],
     "max-len": [1],
     "no-underscore-dangle": [0],
@@ -16,6 +20,7 @@
     "react/no-find-dom-node": [0],
     // @TODO
     "react/no-string-refs": [0],
+    // @TODO
     "react/sort-comp": [0]
   }
 }

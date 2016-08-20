@@ -19,7 +19,6 @@ const WebpackConfig = {
   },
 
   module: {
-
     preLoaders: [
       {
         test: /\.js(x)?$/,
@@ -27,15 +26,11 @@ const WebpackConfig = {
         loader: 'eslint-loader'
       }
     ],
-
     loaders: [
       {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
+        test: /\.js(x)?$/,
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+        loader: 'babel-loader'
       }
     ]
   },
@@ -45,17 +40,16 @@ const WebpackConfig = {
   },
 
   plugins: [
-    // separate common code
     new CommonsChunkPlugin('bundle.js'),
-    new DefinePlugin({
-      'process.env': Object.keys(process.env).reduce(function(o, k) {
-        o[k] = JSON.stringify(process.env[k]);
-        return o;
-      }, {})
+    new webpack.DefinePlugin({
+      'process.env': {
+        // specify all variables manually here
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }
     })
   ],
 
-  // for linting purposes
+  // linting
   eslint: {
     emitError: true,
     emitWarning: true,
